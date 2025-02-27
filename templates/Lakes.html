@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Lakes in Rwanda</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <img src="{{ url_for('static', filename='image/Visit_logo.png') }}" alt="logo" width="70" height="50"> </a>
+    
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="#services">services</a>
+        <a href="#about">about us</a>
+        <a href="#tourist information">places</a>
+        <a href="#to-do">to-do</a>
+        <a href="#contact us">contact us</a>
+    </nav>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="">
+
+    <div class="image" data-aos="zoom-in">
+        <img src="{{ url_for('static', filename='image/main lake.jpeg.jpg') }}" alt="">
+    </div>
+
+    <div class="content" data-aos="fade-up">
+        <p><strong>Welcome to</strong></p>
+        <h3>Beautiful Lakes in Rwanda</h3>
+        <p><strong>Rwanda’s Lakes preference unveils a collection of stunning aquatic landscapes that beckon travelers with their serene beauty and diverse offerings, transforming the country’s shimmering waters into havens of relaxation and adventure. From the vast expanse of Lake Kivu to the wildlife-rich shores of Lake Ihema, each destination captures the essence of Rwanda’s natural splendor, framed by volcanic hills, rolling plains, and tranquil villages. Whether casting a line, gliding across the surface, or simply soaking in the scenery, these lakes provide a refreshing escape for those seeking peace, exploration, or a blend of both amidst Rwanda’s thousand hills.
+        </strong></p>
+        <a href="{{ url_for('/dashboard/') }}" class="btn">Book Now<span class="fas fa-chevron-right"></span></a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+<!-- tourist information section starts  -->
+
+<section class="doctors" id="tourist information">
+
+    <h1 class="heading">Lakes to  <span>
+        Visit in Rwanda</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box" data-aos="zoom-in">
+            <img src="{{ url_for('static', filename='image/Lake Kivu.jpeg.jpg') }}" alt="">
+            <h3>Lake Kivu
+            </h3>
+            <span class="desc">In western Rwanda along the Congo border, just 3 hours from Kigali near Rubavu, Lake Kivu unfurls across 2,700 square kilometers as a serene aquatic haven where beach relaxation draws visitors to unwind on sandy shores like those in Gisenyi, and boat tours venture out to explore islands such as Napoleon, teeming with bat colonies and lush vistas. Here, fishing with locals using traditional nets yields tilapia amidst volcanic hillscapes, island visits reveal vibrant communities with unique stories, swimming in designated safe zones offers a refreshing plunge, and sunset views bathe the lake in golden light, crafting a tranquil escape where resorts amplify the allure of Rwanda’s largest watery gem.
+
+            </span>
+           
+        </div>
+
+        <div class="box" data-aos="zoom-in">
+            <img src="{{ url_for('static', filename='image/Lake-Muhazi-Rwanda.jpg') }}" alt="">
+            <h3>Lake Muhazi
+            </h3>
+            <span class="desc">Nestled 50 kilometers east of Kigali, about an hour’s drive from the capital, Lake Muhazi stretches gracefully over 33 kilometers as a peaceful retreat where fishing spots invite anglers to cast lines for tilapia in quiet solitude, and boat rides glide along its calm edges, tracing the contours of surrounding hills. Scenic shores beckon for picnics beneath shady trees, birdwatching unveils herons and kingfishers dancing along the waterline, camping overnight by the banks wraps visitors in rustic charm under a starlit sky, and photography captures the lake’s serene beauty, offering a soothing getaway just beyond the city’s hum.
+            </span>
+            
+        </div>
+
+        <div class="box" data-aos="zoom-in">
+            <img src="{{ url_for('static', filename='image/Lake Ihema.jpeg.jpg') }}" alt="">
+            <h3>Lake Ihema
+            </h3>
+            <span class="desc">Tucked within Akagera National Park, 2.5 hours from Kigali in eastern Rwanda, Lake Ihema sparkles as a wildlife-rich oasis where boat safaris skim across its surface to reveal hippos wallowing in playful splendor, and hippo sightings bring travelers face-to-face with these aquatic giants against a savanna backdrop. Birding tours spotlight pelicans and African fish eagles soaring overhead, fishing tempts with chances to hook local species, nature walks meander along the lake’s shores through rustling grasses, and photography freezes the vibrant dance of water and wildlife, blending lake tranquility with Akagera’s safari pulse near camps like Ruzizi Tented Lodge.
+            </span>
+            
+        </div>
+
+        <div class="box" data-aos="zoom-in" > 
+            <img src="{{ url_for('static', filename='image/Lake Rweru.jpeg.jpg') }}" alt="">
+            <h3>Lake Rweru
+            </h3>
+            <span class="desc"> In northern Rwanda near the Uganda border, a 4-hour drive from Kigali, Lake Rweru enchants across its 100-square-kilometer expanse with scenic beauty painting its quiet, natural shores, where birdwatching seekers marvel at rare waterbirds like the African skimmer flitting over the surface, and fishing with simple rods becomes a meditative retreat in this untouched haven. Boat trips drift through its serene waters, village visits weave connections with nearby communities living by the lake’s edge, and photography immortalizes the pristine landscape, delivering a remote escape where silence and nature reign supreme.
+            </span>
+            
+        </div>
+
+        <div class="box" data-aos="zoom-in">
+            <img src="{{ url_for('static', filename='image/Lake Burera.jpeg.jpg') }}" alt="">
+            <h3>Lake Burera
+            </h3>
+            <span class="desc">Near Volcanoes National Park in northern Rwanda, 2 hours from Kigali, Lake Burera shimmers over 55 square kilometers with deep blue waters framed by volcanic hills, where photography captures the Virunga Massif’s grandeur reflecting on its surface, and boat rides row gently across its expanse for a peaceful journey beneath rugged peaks. Hiking on nearby slopes lifts the perspective, fishing hooks tilapia with volcanic views enhancing the scene, and shore walks offer tranquil strolls along its edges, weaving a scenic tapestry that pairs perfectly with nearby gorilla treks and Musanze’s simple guesthouses.
+
+            </span>
+            
+        </div>
+
+        <div class="box" data-aos="zoom-in">
+            <img src="{{ url_for('static', filename='image/Lake Ruhondo.jpeg.jpg') }}" alt="">
+            <h3>Lake Ruhondo
+            </h3>
+            <span class="desc">South of Volcanoes National Park, a 2-hour drive from Kigali, Lake Ruhondo unfolds across 28 square kilometers as Burera’s tranquil twin, where nature trails wind through surrounding greenery for a soothing exploration, and boat tours navigate its calm waters to uncover hidden nooks among the hills. Fishing spots lure anglers to cast lines in a serene setting, birdwatching reveals egrets and other avian life along the shore, scenic views highlight the twin lakes’ harmonious beauty, and relaxation settles over its peaceful banks, offering a gentle retreat where nature’s calm embraces visitors near basic lodging options.</span>
+           
+        </div>
+
+        
+
+    
+
+    </div>
+
+</section>
+
+<!-- doctors section ends -->
+ <!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+        <div class="footer-content">
+            <!--add all information -->
+        <a href="#" > <img src="{{ url_for('static', filename='image/Visit_logo.png') }}" alt="logo" width="100" height="100" > </a>
+                <h3>Land Of Thousand Hills</h3>
+                <p>Welcome to Visit Rwanda! Discover the beauty of the "Land of a Thousand Hills" with our guide to gorilla trekking, cultural experiences, and stunning landscapes. Plan your adventure and explore all that Rwanda has to offer.</p>
+                <p>With a reputation for excellence in customer service, Rwandan Toursim is all about giving you an uncomplicated journey.</p>
+    </div>
+
+
+    <div class="box">
+        <h3>quick links</h3>
+        <a href="#home"> <i class="fas fa-chevron-right"></i> home </a>
+        <a href="#services"> <i class="fas fa-chevron-right"></i> services </a>
+        <a href="#about"> <i class="fas fa-chevron-right"></i> about </a>
+        <a href="#tourist information"> <i class="fas fa-chevron-right"></i> places </a>
+        <a href="#to-do"> <i class="fas fa-chevron-right"></i> to-do </a>
+        <a href="#contact us"> <i class="fas fa-chevron-right"></i> contact us </a>
+    </div>
+
+    
+
+    <div class="box">
+        <h3>contact info</h3>
+        <a href="tel:+94 761442341"> <i class="fas fa-phone"></i> +250 792086409 </a>
+        <a href="tel:+94 112246167"> <i class="fas fa-phone"></i> +250 791815780 </a>
+        <a href="mailto:abc@example.com"> <i class="fas fa-envelope"></i> filbertogeorge@gmail.com </a>
+        <a href="mailto:abc@example.com"> <i class="fas fa-envelope"></i> blessingallison425985@gmail.com </a>
+        <a href="https://goo.gl/maps/Q1etccsQ6tqbtL5a6"> <i class="fas fa-map-marker-alt"></i> Musanze, Rwanda </a>
+    </div>
+
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="https://www.facebook.com/"target=-blank> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="https://www.twitter.com/"target=-blank> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="https://www.instagram.com/"target=-blank> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="https://www.linkedin.com/"target=-blank> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="https://www.pinterest.com/"target=-blank> <i class="fab fa-pinterest"></i> pinterest </a>
+        </div>
+
+    </div>
+
+    <div class="credit">  Created by <span>Group 10</span> | all rights reserved 2025! </div>
+
+</section>
+
+<!-- footer section ends -->
+<!-- custom js file link  -->
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Rwanda Tourism</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://kit.fontawesome.com/ca26d76a15.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <meta name="description" content="Discover Rwanda’s best tourism sites and activities, from gorilla trekking to cultural heritage experiences.">
+    <meta name="keywords" content="Rwanda, Tourism, Travel, Adventure, Gorilla Trekking, Safari, Culture">
+    <meta name="author" content="Filberto George">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo">
+        <img src="{{ url_for('static', filename='image/Visit_logo.png') }}" alt="Visit Rwanda logo" width="70" height="50">
+    </a>
+    
+    <form action="" class="search-form">
+        <input type="search" name="" placeholder="Search Here..." id="searchBox">
+        <label for="searchBox" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+    </div>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About us</a>
+        <a href="#tourist information">Places</a>
+        <a href="#to-do">To-Do</a>
+        <a href="#contact us">Contact us</a>
+    </nav>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="image" data-aos="zoom-in">
+        <img src="{{ url_for('static', filename='image/Travel animation.gif') }}" alt="">
+    </div>
+
+    <div class="content" data-aos="fade-up">
+        <p><strong>Welcome to</strong></p>
+        <h3>Visit Rwanda</h3>
+        <p><strong> Welcome to Rwanda, the "Land of a Thousand Hills," where lush landscapes, vibrant culture, and warm hospitality await you. Nestled in the heart of East Africa, this breathtaking country offers an unforgettable experience for every traveler. From tracking endangered mountain gorillas in Volcanoes National Park to exploring the serene beauty of Lake Kivu and learning about Rwanda's inspiring journey of resilience and transformation, there’s something for everyone here. Discover Rwanda—a place where nature, history, and community come together to create memories that last a lifetime.</strong></p>
+        <a href="#contact us" class="btn"> Contact us <span class="fas fa-chevron-right"></span> </a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- filter form section starts  -->
+
+<section class="form-container" data-aos="zoom-in">
+
+    <form action="">
+
+        <div class="inputBox" data-aos="zoom-in">
+            <span>Where to</span>
+            <input type="text" placeholder="search places">
+        </div>
+
+        <div class="inputBox" data-aos="zoom-in">
+            <span>Arrivals</span>
+            <input type="date">
+        </div>
+
+        <div class="inputBox" data-aos="zoom-in">
+            <span>Leaving</span>
+            <input type="date">
+        </div>
+
+        <div class="inputBox" data-aos="zoom-in">
+            <span>How many</span>
+            <input type="number" placeholder="number of travelers">
+        </div>
+
+        <input type="submit" value="Book now" class="btn" data-aos="zoom-in">
+
+    </form>
+
+</section>
+
+<!-- filter form section ends -->
+
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading"> our <span>services</span> </h1>
+
+    <div class="box-container" data-aos="zoom-in">
+        <div class="box" data-aos="zoom-in">
+            <i class="fa-solid fa-magnifying-glass-location"></i>
+            <h3>Recommendations</h3>
+            
+            <a href="{{ url_for('/dashboard/') }}" class="btn">Recommendations<span class="fas fa-chevron-right"></span></a>
+        </div>
+
+        <div class="box" data-aos="zoom-in">
+            <i class="fas fa-hotel"></i>
+            <h3>Luxurious Hotel</h3>
+            
+            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+        </div>
+
+        <div class="box" data-aos="zoom-in">
+            <i class="fas fa-plane"></i>
+            <h3>fastest travel</h3>
+            
+            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+        </div>
+
+        <div class="box" data-aos="zoom-in">
+            <i class="fas fa-utensils"></i>
+            <h3>food and drinks</h3>
+            
+            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+        </div>
+
+        <div class="box" data-aos="zoom-in">
+            <i class="fas fa-globe"></i>
+            <h3>around the country</h3>
+            
+            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+        </div>
+
+        <div class="box" data-aos="zoom-in">
+            <i class="fas fa-hiking"></i>
+            <h3>new adventures</h3>
+            
+            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+        </div>
+
+        <div class="box" data-aos="zoom-in">
+            <i class="fas fa-map"></i>
+            <h3>safety guide</h3>
+            
+            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+        </div>
+
+
+        <div class="box" data-aos="zoom-in" >  
+            <i class="fas fa-wallet"></i>
+            <h3>affordable price</h3>
+            
+            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+        </div>
+
+        <div class="box" data-aos="zoom-in" >  
+            <i class="fas fa-headset"></i>
+            <h3>24/7 support</h3>
+            
+            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span>About</span> us </h1>
+
+    <div class="row">
+
+        <div class="image" data-aos="zoom-in">
+            <img src="{{ url_for('static', filename='image/travel-around-the-world.gif') }}" alt="">
+        </div>
+
+        <div class="content" data-aos="fade-up">
+            <h3>Let us take you on a journey of epic adventure!</h3>
+            <p>Rwanda is a paradise for adventure seekers, offering thrilling experiences amidst its stunning natural landscapes. Embark on an unforgettable journey into the misty mountains of Volcanoes National Park to trek alongside majestic mountain gorillas, one of the rarest and most awe-inspiring wildlife encounters in the world. For those seeking more adrenaline-pumping activities, hike the towering peaks of Mount Karisimbi or Bisoke, where you'll be rewarded with panoramic views of volcanic craters and rolling hills.
+
+                Explore the rugged terrain of Nyungwe Forest National Park, home to chimpanzees, colobus monkeys, and hundreds of bird species, while ziplining through the canopy or walking along suspension bridges that offer breathtaking perspectives of the dense rainforest below. Kayak across the tranquil waters of Lake Kivu or challenge yourself with white-water rafting on the mighty Akagera River in Akagera National Park, where you can also spot lions, elephants, and giraffes in their natural habitat.
+                
+                Whether it's hiking, wildlife adventures, or cultural explorations, Rwanda promises an exhilarating escape into nature’s wonders, making it the perfect destination for adventurers who crave both excitement and connection with the earth.</p>
+            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+<!-- icons section starts  -->
+
+<section class="icons-container">
+
+    <div class="icons" data-aos="zoom-in">
+        <i class="fas fa-camera-retro facts-icon"></i>
+        <h3>1220</h3>
+        <p>Photos Taken</p>
+    </div>
+
+    <div class="icons" data-aos="zoom-in" >
+        <i class="fas fa-umbrella-beach  facts-icon"></i>
+        <h3>450</h3>
+        <p>Beaches Visited</p>
+    </div>
+
+    <div class="icons" data-aos="zoom-in">
+        <i class="fas fa-mountain facts-icon"></i>
+        <h3>84</h3>
+        <p>Mountains Climbed</p>
+    </div>
+
+    <div class="icons" data-aos="zoom-in">
+        <i class="fas fa-ship facts-icon"></i>
+        <h3>150</h3>
+        <p>Cruises Organized</p>
+    </div>
+
+</section>
+
+<!-- icons section ends -->
+
+
+<!-- tourist information section starts  -->
+
+<section class="doctors" id="tourist information">
+
+    <h1 class="heading">  Popular<span>
+        Tourism Sites</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box" data-aos="zoom-in">
+            <img src="{{ url_for('static', filename='image/Nyungwe-National-Parkss.jpg') }}" alt="">
+            <h3>Wildlife </h3>
+            <span class="desc">Rwanda is a haven for wildlife enthusiasts, offering unforgettable encounters with some of the world's most remarkable species. The star attraction is the endangered mountain gorilla, found in the lush Volcanoes National Park,....</span>
+            <div class="share">
+                <a href="{{ url_for('wildlife') }}" class="btn"> Read more <span class="fas fa-chevron-right"></span> </a>
+
+            </div>
+        </div>
+
+        <div class="box" data-aos="zoom-in">
+            <img src="{{ url_for('static', filename='image/culture.jpg') }}" alt="">
+            <h3>Culture Places in Rwanda</h3>
+            <span class="desc">Often Called The Mini London, Nuwara Eliya Is A Perfect Place To Relax In Sri Lanka. There Are A Lot Of Places To Visit In Nuwara Eliya And The Whole Of Nuwara Eliya Is ...</span>
+            <div class="share">
+                
+                <a href="{{ url_for('Culture_places') }}" class="btn"> Read more <span class="fas fa-chevron-right"></span> </a>
+            </div>
+        </div>
+
+        <div class="box" data-aos="zoom-in">
+            <img src="{{ url_for('static', filename='image/adventures.jpg') }}" alt="">
+            <h3>Adventure</h3>
+            <span class="desc">The Adventure preference in the Rwanda tourism recommendation system invites thrill-seekers and intrepid explorers to dive into a dynamic playground defined by Rwanda’s dramatic landscapes and awe-inspiring natural wonders, where every twist of the trail promises an exhilarating challenge. Tailored for those who crave heart-pounding experiences, this category showcases the country’s diverse topography...</span>
+            <div>
+            
+                <a href="{{ url_for('adventure') }}" class="btn"> Read more <span class="fas fa-chevron-right"></span> </a>
+            </div>
+        </div>
+
+        <div class="box" data-aos="zoom-in" > 
+            <img src="{{ url_for('static', filename='image/main lake.jpeg.jpg') }}" alt="">
+            <h3>Lakes</h3>
+            <span class="desc">Rwanda’s Lakes preference unveils a collection of stunning aquatic landscapes that beckon travelers with their serene beauty and diverse offerings,...
+            </span>
+            <div class="share">
+                
+                <a href="{{ url_for('Lakes') }}" class="btn"> Read more <span class="fas fa-chevron-right"></span> </a>
+            </div>
+        </div>
+
+        <div class="box" data-aos="zoom-in">
+            <img src="{{ url_for('static', filename='image/Historical-sites-in-Rwanda Main.jpeg.jpg') }}" alt="">
+            <h3>Rwanda's History</h3>
+            <span class="desc">Rwanda’s History preference invites travelers on a profound journey through the nation’s complex past, unveiling a tapestry of royal legacies, colonial echoes, and the indelible scars of the 1994 genocide,...</span>
+            <div class="share">
+                
+                <a href="{{ url_for('Historical') }}" class="btn"> Read more <span class="fas fa-chevron-right"></span> </a>
+            </div>
+        </div>
+
+        <div class="box" data-aos="zoom-in">
+            <img src="{{ url_for('static', filename='image/Main picture.jpeg.jpg') }}" alt="">
+            <h3>Food</h3>
+            <span class="desc">Rwanda’s Food preference tantalizes the taste buds of culinary adventurers, offering a flavorful journey through the nation’s rich gastronomic tapestry, where traditional staples meet fresh local ingredients and vibrant dining scenes...</span>
+            <div class="share">
+                
+                <a href="{{ url_for('Food') }}" class="btn"> Read more <span class="fas fa-chevron-right"></span> </a>
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- doctors section ends -->
+
+
+
+<!-- to-do section starts  -->
+
+<section class="to-do" id="to-do">
+    
+    <h1 class="heading"> to-do <span>places</span> </h1>
+
+    <div class="box-container">
+        
+
+            <div class="image" data-aos="zoom-in" >
+                
+                <img src="{{ url_for('static', filename='image/checklist.gif') }}" alt="">
+            </div>
+            <div class="container" data-aos="fade-up">
+                <p >
+                  <label for="new-task" style="font-size: 30px;" >Add Places</label>
+                  <ul data-aos="fade-up"><input id="new-task" type="text"><button class="btn">Add</button></ul>
+                </p>
+                
+                <h3 style="font-size: 30px;">Todo</h3>
+                <ul id="incomplete-tasks" data-aos="fade-up" >
+                  <li><input type="checkbox"><label>Colombo</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+                  <li class="editMode"><input type="checkbox"><label>Lotus Tower</label><input type="text" value="Lotus Tower"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+                  
+                </ul>
+                
+                <h3 style="font-size: 30px;">Completed</h3>
+                <ul id="completed-tasks" data-aos="fade-up">
+                  <li><input type="checkbox" checked><label>Galle Face</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+                </ul>
+              </div>
+    </div>
+
+</section>
+
+<!-- to-do section ends -->
+
+<!-- booking section starts   -->
+
+<section class="book" id="contact us">
+
+    <h1 class="heading"> <span>contact</span> us </h1>    
+
+    <div class="row">
+
+        <div class="image" data-aos="zoom-in" >
+            <img src="{{ url_for('static', filename='image/sending.gif') }}" alt="">
+            
+        </div>
+
+        <form action=""  data-aos="fade-up" >
+            <h3 data-aos="fade-up">GET IN TOUCH WITH US</h3>
+            <input type="text" placeholder="your name" class="box" data-aos="fade-up" >
+            <input type="number" placeholder="your number" class="box"  data-aos="fade-up">
+            <input type="email" placeholder="your email" class="box" data-aos="fade-up" >
+            <input type="text" placeholder="your subject" class="box"  data-aos="fade-up">
+            <textarea name="" placeholder="your message" id="" cols="30" rows="10" data-aos="fade-up"></textarea>
+            <input href="" type="submit" value="send message" class="btn"  data-aos="fade-up">
+        </form>
+
+    </div>
+
+</section>
+
+<!-- booking section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+        
+
+        <div class="footer-content">
+                <!--add all information -->
+                
+            <a href="#" > <img src="{{ url_for('static', filename='image/Visit_logo.png') }}" alt="logo" width="100" height="100" > </a>
+                    <h3>Land Of Thousand Hills</h3>
+                    <div id="footer-text">
+                        <p>Welcome to Visit Rwanda! Discover the beauty of the "Land of a Thousand Hills" with our guide to gorilla trekking, cultural experiences, and stunning landscapes. Plan your adventure and explore all that Rwanda has to offer.</p>
+                            <p>With a reputation for excellence in customer service, Rwandan Toursim is all about giving you an uncomplicated journey.</p>
+                    </div>
+        </div>
+
+        <div class="box">
+            <h3>Quick links</h3>
+            <a href="#home"> <i class="fas fa-chevron-right"></i> Home </a>
+            <a href="#services"> <i class="fas fa-chevron-right"></i> Services </a>
+            <a href="#about"> <i class="fas fa-chevron-right"></i> About </a>
+            <a href="#tourist information"> <i class="fas fa-chevron-right"></i> Places </a>
+            <a href="#to-do"> <i class="fas fa-chevron-right"></i> To-do </a>
+            <a href="#contact us"> <i class="fas fa-chevron-right"></i> Contact us </a>
+        </div>
+
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="tel:+94 761442341"> <i class="fas fa-phone"></i> +250 792086409 </a>
+            <a href="tel:+94 112246167"> <i class="fas fa-phone"></i> +250 791815780 </a>
+            <a href="mailto:abc@example.com"> <i class="fas fa-envelope"></i> filbertogeorge@gmail.com </a>
+            <a href="mailto:abc@example.com"> <i class="fas fa-envelope"></i> blessingallison425985@gmail.com </a>
+            <a href="https://goo.gl/maps/Q1etccsQ6tqbtL5a6"> <i class="fas fa-map-marker-alt"></i> Musanze, Rwanda </a>
+        </div>
+
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="https://www.facebook.com/"target=-blank> <i class="fab fa-facebook-f"></i> Facebook </a>
+            <a href="https://www.twitter.com/"target=-blank> <i class="fab fa-twitter"></i> Twitter </a>
+            <a href="https://www.instagram.com/"target=-blank> <i class="fab fa-instagram"></i> Instagram </a>
+            <a href="https://www.linkedin.com/"target=-blank> <i class="fab fa-linkedin"></i> LinkedIn </a>
+            <a href="https://www.pinterest.com/"target=-blank> <i class="fab fa-pinterest"></i> Pinterest </a>
+        </div>
+
+    </div>
+
+    <div class="credit">
+        Created by <span>Group 10</span> | all rights reserved 2025!
+    </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<!-- custom js file link  -->
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+<script>
+
+    AOS.init({
+        duration:800,
+        delay:400
+    });
+    
+    </script>
+
+</body>
+</html>
